@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle at top, #1e1b4b, #020617);
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    backdrop-filter: blur(20px);
+    background: rgba(255,255,255,0.05);
+}
+
+.logo {
+    height: 40px;
+}
+
+nav a {
+    margin-left: 25px;
+    color: #cbd5f5;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.hero h1 {
+    font-size: 55px;
+}
+
+.hero span {
+    background: linear-gradient(45deg, #6366f1, #a855f7);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero-right img {
+    width: 400px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Glass */
+.glass {
+    backdrop-filter: blur(20px);
+    background: rgba(255,255,255,0.05);
+}
+
+/* Cards */
+.card, .startup-card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.card:hover, .startup-card:hover {
+    transform: scale(1.05);
+}
+
+/* Glow */
+.glow:hover {
+    box-shadow: 0 0 20px #8b5cf6;
+}
+
+/* Buttons */
+.primary {
+    background: linear-gradient(45deg, #6366f1, #a855f7);
+    padding: 12px 25px;
+    border-radius: 10px;
+}
+
+.secondary {
+    border: 1px solid #8b5cf6;
+    padding: 12px 25px;
+    border-radius: 10px;
+}
+
+/* Layout */
+.section {
+    padding: 80px;
+    text-align: center;
+}
+
+.steps, .startup-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    padding: 100px;
+}
